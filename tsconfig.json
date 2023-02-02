@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    //конечная папка, куда производится сборка.
+    "noImplicitAny": true,
+    //тип создан для обратной совместимости с JavaScript. С точки зрения TypeScript, все переменные в JavaScript это any.
+    "module": "ESNext",
+    //модульная система, которую будет использовать ваше собранное приложение. На выбор: None, CommonJS, ES6, ES2015.
+    "target": "es5",
+    //версия стандарта ECMAScript, в которую будет скомпилирован код.
+    "jsx": "react",
+    //если проект использует React, необходимо включить поддержку jsx.
+    "allowJs": true,
+    //портировать ваш JavaScript проект на TypeScript поможет allowJs флаг.
+    "moduleResolution": "node",
+    //стратегия, которая будет использоваться для импорта модулей. Здесь всего две опции: node и classic.
+    "esModuleInterop": true,
+    //esModuleInterop - позволяет импортировать CommonJS пакеты как ES6.
+    "allowSyntheticDefaultImports": true
+    //allowSyntheticDefaultImports - import * as React from 'react' => import React from 'react'.
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
