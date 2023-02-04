@@ -1,8 +1,9 @@
-import React from "react";
-import './Counter.scss'
+import React, { useState } from "react";
+import classes from './Counter.module.scss'
+
 
 export function Counter() {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
     function getIncrementValue() {
         setValue(value + 1);
     }
@@ -11,11 +12,12 @@ export function Counter() {
     }
 
     return (
-        <div>
+        <div className={classes.btn}>
             <h1>{value}</h1>
+            <p>Nep gbplf</p>
             <button onClick={getIncrementValue}>+</button>
             <button onClick={getDecrementValue}>-</button>
         </div>
     );
-};
+}
 
