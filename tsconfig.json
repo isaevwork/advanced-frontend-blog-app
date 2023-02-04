@@ -8,7 +8,7 @@
     //модульная система, которую будет использовать ваше собранное приложение. На выбор: None, CommonJS, ES6, ES2015.
     "target": "es5",
     //версия стандарта ECMAScript, в которую будет скомпилирован код.
-    "jsx": "react",
+    "jsx": "react-jsx",
     //если проект использует React, необходимо включить поддержку jsx.
     "allowJs": true,
     //портировать ваш JavaScript проект на TypeScript поможет allowJs флаг.
@@ -23,5 +23,5 @@
     "compilerOptions": {
       "module": "commonjs"
     }
-  }
+  },
 }
