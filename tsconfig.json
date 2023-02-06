@@ -14,6 +14,10 @@
     //портировать ваш JavaScript проект на TypeScript поможет allowJs флаг.
     "moduleResolution": "node",
     //стратегия, которая будет использоваться для импорта модулей. Здесь всего две опции: node и classic.
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true,
     //esModuleInterop - позволяет импортировать CommonJS пакеты как ES6.
     "allowSyntheticDefaultImports": true
