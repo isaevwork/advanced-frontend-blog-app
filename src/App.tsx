@@ -6,11 +6,12 @@ import {Theme, ThemeContext} from "./styles/theme/ThemeContext";
 
 import './styles/index.scss'
 import {useTheme} from "./styles/theme/useTheme";
+import {classNames} from "./helpers/classNames/classNames";
 
 const App = () => {
     const { theme, toggleTheme } = useTheme();
     return (
-        <div className={`app ${theme}`}>
+        <div className={classNames('app', {}, [theme])}>
             <button onClick={toggleTheme}>Toggle</button>
             <Link to={'/'}>MainPage</Link>
             <Link to={'/about'}>AboutPage</Link>
