@@ -6,6 +6,7 @@ import {useTheme} from "app/providers/ThemeProvider";
 import './styles/index.scss'
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
+import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
 
 const App = () => {
     const { theme, toggleTheme } = useTheme();
@@ -13,7 +14,7 @@ const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Navbar />
             <AppRouter />
-            <button onClick={toggleTheme}>Toggle</button>
+            <ThemeSwitcher />
         </div>
     );
 };
