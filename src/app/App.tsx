@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {classNames} from "shared/lib/classNames/classNames";
-import {useTheme} from "app/providers/ThemeProvider";
+import {useVariant} from "app/providers/VariantProvider";
 
 import './styles/index.scss'
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
-import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
+import {Sidebar} from "widgets/Sidebar";
 
 const App = () => {
-    const { theme, toggleTheme } = useTheme();
+    const { variant } = useVariant();
+
     return (
-        <div className={classNames('app', {}, [theme])}>
-            <Navbar />
-            <AppRouter />
-            <ThemeSwitcher />
+        <div className={classNames('app', {}, [variant])}>
+            <Navbar/>
+            <div className="content-type">
+                <Sidebar />
+                <AppRouter />
+            </div>
         </div>
     );
 };

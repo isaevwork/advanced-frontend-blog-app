@@ -2,14 +2,14 @@ import App from "./app/App";
 
 import {render} from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
-import ThemeProvider from "./app/providers/ThemeProvider/ui/ThemeProvider";
+import {VariantProvider} from "app/providers/VariantProvider";
 
 
 render(
     <BrowserRouter>
-        <ThemeProvider>
+        <VariantProvider>
             <App/>
-        </ThemeProvider>
+        </VariantProvider>
     </BrowserRouter>,
     document.getElementById('root')
 )

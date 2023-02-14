@@ -1,7 +1,7 @@
-@import "reset";
-@import "themes/dark";
-@import "themes/default";
-@import "variables/global";
+@import 'reset';
+@import 'themes/dark';
+@import 'themes/default';
+@import 'variables/global';
 
 * {
   margin: 0;
@@ -16,4 +16,13 @@
   color: var(--primary-color);
 
   min-height: 100vh ;
+}
+
+.content-type {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  padding: 20px;
 }
