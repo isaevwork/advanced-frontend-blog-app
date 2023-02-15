@@ -16,12 +16,14 @@ export const ThemeSwitcher = ({className}: VariantSwitcherProps) => {
     const {variant, toggleVariant} = useVariant();
 
     return (
-        <Button
-            variant={VariantButton.CLEAR}
-            onClick={toggleVariant}
-            className={classNames(cls.themeSwitcher, {}, [className])}
-        >
-            {variant === Variant.DARK ? <DarkIcon width="20"/> : <DefaultIcon width="20"/>}
-        </Button>
+        <div className={cls.themeWrapper}>
+            <Button
+                variant={VariantButton.CLEAR}
+                onClick={toggleVariant}
+                className={classNames(cls.themeSwitcher, {}, [className])}
+            >
+                {variant === Variant.DARK ? <DarkIcon width="20"/> : <DefaultIcon width="20"/>}
+            </Button>
+        </div>
     );
 };

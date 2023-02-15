@@ -9,14 +9,19 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         use: ['@svgr/webpack'],
     }
 
-    const fileLoader = {
-            test: /\.(png|jpe?g|gif|woff2|woff)$/i,
-            use: [
-                {
-                    loader: 'url-loader',
-                },
-            ],
-        }
+    const imgLoader: webpack.RuleSetRule = {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+    }
+
+    // const fileLoader = {
+    //         test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+    //         use: [
+    //             {
+    //                 loader: 'url-loader',
+    //             },
+    //         ],
+    //     }
 
     const cssLoaders = {
         test: /\.s[ac]ss$/i,
@@ -45,7 +50,8 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
     return [
         svgLoader,
-        fileLoader,
+        imgLoader,
+        // fileLoader,
         typescriptLoader,
         cssLoaders,
     ]
