@@ -1,0 +1,31 @@
+.switcherWrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.langSwitcher {
+  padding: 0px 10px;
+}
+
+.ruIconWrapper {
+  fill: var(--primary-color);
+}
+
+.ruIconWrapper:hover {
+  width: 25px;
+  height: 30px;
+  transition: 0.2s;
+  opacity: 60%;
+}
+
+.enIconWrapper {
+  fill: var(--primary-color);
+}
+
+.enIconWrapper:hover {
+  width: 25px;
+  height: 30px;
+  opacity: 60%;
+  transition: 0.2s;
+}

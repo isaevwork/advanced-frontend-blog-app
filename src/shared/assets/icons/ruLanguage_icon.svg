@@ -1,0 +1,9 @@
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg height="20"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     version="1.1" viewBox="0 0 4335 4335" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style type="text/css"></style>
+    </defs>
+    <g ><path fill="" d="M542 119l3251 0c233,0 423,190 423,423l0 3251c0,233 -190,423 -423,423l-3251 0c-233,0 -423,-190 -423,-423l0 -3251c0,-233 190,-423 423,-423zm662 2277l0 558 -341 0 0 -1601 551 0c398,0 597,169 597,506 0,164 -60,296 -180,394 -120,99 -271,146 -451,142l-176 0zm0 -778l0 517 148 0c201,0 301,-87 301,-262 0,-170 -99,-255 -298,-255l-151 0zm2269 -265l-500 1100c-102,225 -198,369 -286,433 -89,64 -185,96 -289,96 -84,0 -153,-12 -207,-37l0 -313c61,39 123,59 188,59 94,0 177,-77 249,-229l-527 -1108 388 0 279 666c14,32 26,74 37,127l2 0c8,-37 21,-79 39,-124l268 -669 360 0z"/></g></svg>

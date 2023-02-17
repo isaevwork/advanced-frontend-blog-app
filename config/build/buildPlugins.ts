@@ -17,7 +17,7 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
             }),
         // Плагин создает CSS-файл для каждого JS-файла,который содержит CSS.
         new webpack.DefinePlugin({
-            __IS__DEV__: JSON.stringify(isDev),
+            __IS_DEV__: JSON.stringify(isDev),
         })
 
     ]

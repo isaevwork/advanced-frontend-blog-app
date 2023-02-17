@@ -2,19 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
   height: 35px;
-  border-radius: 50px;
+  border-radius: 10px;
+  padding-left: 5px;
 }
-.themeWrapper:hover {
-  background: #7d7d7d1c;
+.darkIconHover:hover {
+  transition: 0.2s;
+  width: 30px;
+  opacity: 60%;
 }
 
-.themeWrapper:active {
-  background: #a3a2a21c;
-}
-
-.themeSwitcher {
-  width: 50px;
-  height: 30px;
+.defaultIconHover:hover {
+  transition: 0.2s;
+  width: 30px;
+  opacity: 60%;
 }

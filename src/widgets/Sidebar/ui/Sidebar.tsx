@@ -6,6 +6,7 @@ import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
 import { Button, VariantButton } from "shared/ui/Button/Button";
 import { Variant } from "app/providers/VariantProvider/ui/VariantContext";
 import { useVariant } from "app/providers/VariantProvider";
+import {LangSwitcher} from "widgets/LangSwitcher/LangSwitcher";
 
 interface SidebarProps {
   className?: string;
@@ -21,8 +22,9 @@ export const Sidebar = ({ className, collapsed }: SidebarProps) => {
         variant,
       ])}
     >
-      <div className={cls.switchers}>
-        <ThemeSwitcher />
+      <div className={cls.switchersWrapper}>
+          <ThemeSwitcher />
+          <LangSwitcher />
       </div>
     </div>
   );
