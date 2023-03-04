@@ -2,6 +2,8 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack from "webpack";
 import {BuildOptions} from "./types/config";
+import {BundleAnalyzerPlugin}  from 'webpack-bundle-analyzer';
+
 
 export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
     return [
@@ -18,7 +20,11 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         // Плагин создает CSS-файл для каждого JS-файла,который содержит CSS.
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
-        })
+        }),
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+            analyzerMode: process.env.STATS as 'server' || 'disabled',
+}),
 
     ]
 }
