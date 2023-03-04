@@ -2,5 +2,7 @@
   "Перевод": "Translate",
   "О сайте" : "About",
   "Главная" : "Main",
-  "Страница не найдена": "Page Not Found"
+  "Страница не найдена": "Page Not Found",
+  "Произошла непредвиденная ошибка": "Something Gone Wrong",
+  "Обновить страницу": "Refresh Page"
 }

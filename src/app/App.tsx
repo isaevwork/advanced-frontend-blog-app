@@ -1,4 +1,4 @@
-import React, {Suspense, useContext, useState } from "react";
+import React, {Suspense, useContext, useEffect, useState } from "react";
 
 import { classNames } from "shared/lib/classNames/classNames";
 import { useVariant } from "app/providers/VariantProvider";
@@ -13,7 +13,6 @@ import "./styles/index.scss";
 const App = () => {
   const { variant } = useVariant();
   const [collapsed, setCollapsed] = useState(false);
-
 
   return (
     <div className={classNames("app", {}, [variant])}>
