@@ -18,7 +18,11 @@ export const Navbar = ({ className, setCollapsed, collapsed }: NavbarProps) => {
   return (
     <div className={classNames(cls.navbar, { [cls.variant]: variant }, [className])}>
       <div className={cls.menuWrapper}>
-        <Button variant={VariantButton.CLEAR} onClick={() => setCollapsed(!collapsed)}>
+        <Button
+            data-testid="sidebar-toggle"
+            variant={VariantButton.CLEAR}
+            onClick={() => setCollapsed(!collapsed)}
+        >
           {variant === Variant.DARK ? (
             <DarkMenu width="25" />
           ) : (
