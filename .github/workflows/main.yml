@@ -7,10 +7,10 @@ on:
     branches: [master]
 jobs:
   pipeline:
-    runs-on: mac-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node_version: [ 16.x ]
+        node_version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
@@ -22,13 +22,13 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
-        if: always()
+#        if: always()
       - name: unit testing
         run: npm run test:unit
-        if: always()
+#        if: always()
       - name: build storybook
         run: npm run storybook:build
-        if: always()
+#        if: always()
       - name: screenshot testing
         run: npm run test:ui:ci
-        if: always()
+#        if: always()
