@@ -1,12 +1,12 @@
 import { screen } from "@testing-library/react";
 import { Sidebar } from "widgets/Sidebar";
-import { renderWithTranslation } from "shared/lib/helpers/renderWithTranslation/renderWithTranslation";
+import { componentRender } from "shared/lib/tests/componentRender/componentRender";
 
 
 
 describe('Sidebar', () => {
     test('Test ', () => {
-        renderWithTranslation(<Sidebar />);
+        componentRender(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     });
     // test('Test toggle Sidebar', () => {
