@@ -4,11 +4,7 @@
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background: var(--inverted-bg-color);
-  transition: width 0.2s;
-}
-
-.collapsed {
-  width: var(--sidebar-width-collapsed);
+  transition: width 0.3s;
 }
 
 .switchersWrapper {
@@ -28,4 +24,37 @@
 
 .switchersWrapper:active {
   background: #a3a2a21c;
+}
+
+.links {
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+ margin: 5px 0;
+}
+
+.link {
+  animation: ease-in-out;
+  transition: 1s opacity;
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon {
+  fill: var(--inverted-primary-color);
+  margin-right: 13px;
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+
+  .link {
+    animation: ease-in-out;
+    opacity: 0;
+    transition: 0.5s opacity;
+    visibility: hidden;
+  }
 }

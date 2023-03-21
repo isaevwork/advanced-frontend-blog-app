@@ -30,13 +30,6 @@ export const Navbar = ({ className, setCollapsed, collapsed }: NavbarProps) => {
           )}
         </Button>
       </div>
-
-      <div className={cls.links}>
-        <AppLink to={"/"} className={cls.mainLink}>
-          Главная
-        </AppLink>
-        <AppLink to={"/about"}>AboutPage</AppLink>
-      </div>
     </div>
   );
 };

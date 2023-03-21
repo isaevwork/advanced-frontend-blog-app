@@ -1,14 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {BugButton} from "app/providers/ErrorBoundary";
+import {Button, SizeButton, VariantButton} from "shared/ui/Button/Button";
 
 const MainPage = () => {
     const {t} = useTranslation();
 
     return (
         <div>
-            <BugButton />
+            {/*<BugButton />*/}
             {t('Главная')}
+            <div>
+            <Button variant={VariantButton.BACKGROUND_INVERTED}  size={SizeButton.XL}>Take me</Button>
+            </div>
         </div>
     );
 };

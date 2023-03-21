@@ -1,14 +1,14 @@
-import { useState } from "react";
-// import { classNames } from "src/shared/lib/classNames/classNames";
 import cls from "./Sidebar.module.scss";
-// import { ThemeSwitcher } from "src/shared/ui/ThemeSwitcher";
 
-// import { useVariant } from "src/app/providers/VariantProvider";
-// import {LangSwitcher} from "src/widgets/LangSwitcher/LangSwitcher";
 import { useVariant } from "app/providers/VariantProvider/lib/useVariant";
 import { LangSwitcher } from "widgets/LangSwitcher/LangSwitcher";
 import { ThemeSwitcher } from "shared/ui/ThemeSwitcher/ui/ThemeSwitcher";
 import { classNames } from "shared/lib/classNames/classNames";
+import {AppLink} from "shared/ui/AppLink/AppLink";
+import { RoutePath } from "shared/config/routeConfig/routeConfig";
+import AboutIcon from "shared/assets/icons/aboutPage_icon.svg";
+import MainIcon from "shared/assets/icons/mainPage_icon.svg";
+import { useTranslation } from "react-i18next";
 
 interface SidebarProps {
   className?: string;
@@ -17,6 +17,7 @@ interface SidebarProps {
 
 export const Sidebar = ({ className, collapsed }: SidebarProps) => {
   const { variant } = useVariant();
+  const {t, i18n} = useTranslation();
 
   return (
     <div
@@ -25,6 +26,20 @@ export const Sidebar = ({ className, collapsed }: SidebarProps) => {
         variant,
       ])}
     >
+        <div className={cls.links}>
+                <AppLink to={RoutePath.main} className={cls.item}>
+                    <MainIcon className={cls.icon} />
+                   <span className={cls.link}>
+                        {t('Главная')}
+                   </span>
+                </AppLink>
+                <AppLink to={RoutePath.about} className={cls.item}>
+                    <AboutIcon className={cls.icon}/>
+                    <span className={cls.link}>
+                        {t('О сайте')}
+                    </span>
+                </AppLink>
+        </div>
       <div className={cls.switchersWrapper}>
           <ThemeSwitcher />
           <LangSwitcher />

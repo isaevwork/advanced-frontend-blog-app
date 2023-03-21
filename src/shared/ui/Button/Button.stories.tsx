@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import {Button, VariantButton} from './Button';
+import {Button, SizeButton, VariantButton} from './Button';
 import {ThemeDecorator} from "shared/config/storyBook/ThemeDecorator/ThemeDecorator";
 import {Variant} from "app/providers/VariantProvider/ui/VariantContext";
 
@@ -41,4 +41,40 @@ OutlineDark.args = {
 };
 
 OutlineDark.decorators = [ThemeDecorator(Variant.DARK)];
+
+export const OutlineSizeS = Template.bind({});
+OutlineSizeS.args = {
+    children: 'Text',
+    variant: VariantButton.OUTLINE,
+    size: SizeButton.S
+};
+
+OutlineSizeS.decorators = [ThemeDecorator(Variant.DARK)];
+export const OutlineSizeM = Template.bind({});
+OutlineSizeM.args = {
+    children: 'Text',
+    variant: VariantButton.OUTLINE,
+    size: SizeButton.M
+};
+
+OutlineSizeM.decorators = [ThemeDecorator(Variant.DARK)];
+
+export const OutlineSizeL = Template.bind({});
+OutlineSizeL.args = {
+    children: 'Text',
+    variant: VariantButton.OUTLINE,
+    size: SizeButton.L
+};
+
+OutlineSizeL.decorators = [ThemeDecorator(Variant.DARK)];
+
+
+export const OutlineSizeXL = Template.bind({});
+OutlineSizeXL.args = {
+    children: 'Text',
+    variant: VariantButton.OUTLINE,
+    size: SizeButton.XL
+};
+
+OutlineSizeXL.decorators = [ThemeDecorator(Variant.DARK)];
 

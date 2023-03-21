@@ -14,7 +14,9 @@ const App = () => {
   const { variant } = useVariant();
   const [collapsed, setCollapsed] = useState(false);
 
+  console.log(collapsed)
   return (
+
     <div className={classNames("app", {}, [variant])}>
         <Suspense fallback="">
           <Navbar setCollapsed={setCollapsed} collapsed={collapsed} />
