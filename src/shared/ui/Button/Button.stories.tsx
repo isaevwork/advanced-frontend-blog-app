@@ -28,6 +28,14 @@ Clear.args = {
 };
 
 Clear.decorators = [ThemeDecorator(Variant.DEFAULT)];
+
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+    children: 'Text',
+    variant: VariantButton.CLEAR_INVERTED
+};
+
+ClearInverted.decorators = [ThemeDecorator(Variant.DEFAULT)];
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',

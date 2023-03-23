@@ -5,6 +5,7 @@ import {BrowserRouter} from 'react-router-dom';
 import {VariantProvider} from "app/providers/VariantProvider";
 import { ErrorBoundary } from "app/providers/ErrorBoundary";
 
+import 'app/styles/index.scss'
 import "shared/config/i18n/i18n";
 
 render(

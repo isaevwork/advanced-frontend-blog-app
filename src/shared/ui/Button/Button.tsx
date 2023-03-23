@@ -4,6 +4,7 @@ import cls from "./Button.module.scss"
 
 export enum VariantButton {
     CLEAR = 'clear',
+    CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
     BACKGROUND = 'background',
     BACKGROUND_INVERTED = 'backgroundInverted'
