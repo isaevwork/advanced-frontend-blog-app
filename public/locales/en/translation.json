@@ -5,5 +5,7 @@
   "Страница не найдена": "Page Not Found",
   "Произошла непредвиденная ошибка": "Something Gone Wrong",
   "Обновить страницу": "Refresh Page",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Увеличить": "Increment",
+  "Уменьшить": "Decrement"
 }
