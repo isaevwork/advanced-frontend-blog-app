@@ -10,5 +10,7 @@
   "Уменьшить": "Decrement",
   "Войти": "Sign In",
   "Введите логин": "Enter login",
-  "Введите пароль": "Enter password"
+  "Введите пароль": "Enter password",
+  "Форма авторизации": "Sign in WikiSav",
+  "Вы ввели неверный логин или пароль": "Uncorrected username or password"
 }

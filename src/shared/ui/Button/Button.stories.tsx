@@ -86,3 +86,12 @@ OutlineSizeXL.args = {
 
 OutlineSizeXL.decorators = [ThemeDecorator(Variant.DARK)];
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: 'Text',
+    variant: VariantButton.OUTLINE,
+    disabled: true
+};
+
+OutlineSizeXL.decorators = [ThemeDecorator(Variant.DARK)];
+
