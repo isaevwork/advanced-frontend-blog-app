@@ -18,18 +18,23 @@ export const Default = Template.bind({});
 Default.args = {};
 Default.decorators = [StoreDecorator({
 
+}, {
+
 })];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Variant.DARK), StoreDecorator({})];
+Dark.decorators = [ThemeDecorator(Variant.DARK), StoreDecorator({}, {
+
+})];
 
 export const AuthNavbar = Template.bind({});
 AuthNavbar.args = {};
 AuthNavbar.decorators = [ThemeDecorator(Variant.DARK), StoreDecorator({
     user: {
         authData: {
-
         }
     }
+}, {
+
 })];
